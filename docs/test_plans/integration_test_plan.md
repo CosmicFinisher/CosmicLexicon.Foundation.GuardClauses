@@ -6,7 +6,7 @@ This document outlines the detailed integration test plan for the Guard Clause C
 
 ## 2. Test Scope
 
-The integration tests specifically target the AI Verifiable End Result defined in the Master Project Plan (`docs/PRDMasterPlan.v2.md:98`) for Phase 5, Micro Task 2: "Successful execution of all integration tests in the CI pipeline." These tests will validate the correct behavior of application logic that utilizes the `OpenEchoSystem.GuardClauses` library, ensuring that:
+The integration tests specifically target the AI Verifiable End Result defined in the Master Project Plan (`docs/PRDMasterPlan.v2.md:98`) for Phase 5, Micro Task 2: "Successful execution of all integration tests in the CI pipeline." These tests will validate the correct behavior of application logic that utilizes the `CosmicLexicon.Foundation.GuardClauses` library, ensuring that:
 
 *   Application methods correctly invoke guard clauses with appropriate arguments.
 *   Guard clauses, when triggered by invalid inputs, correctly throw the expected exceptions.
@@ -18,7 +18,7 @@ The integration tests specifically target the AI Verifiable End Result defined i
 Our integration testing strategy is rooted in the London School of TDD, emphasizing the verification of observable outcomes through interactions with collaborators.
 
 *   **Interaction-Based Testing:** Instead of inspecting the internal state of the `Guard` class (which is primarily handled by unit tests), integration tests will focus on the *behavior* of the application code (the "unit under test") as it interacts with the `Guard` library. This means we observe whether the application method correctly throws an exception when a guard clause is violated, or completes successfully when inputs are valid.
-*   **Collaborators & Mocking:** In the context of integration tests for a static utility library like `OpenEchoSystem.GuardClauses`, the "collaborators" are the specific guard clause extension methods (e.g., `Guard.Against.NullOrWhiteSpace`, `Guard.Against.OutOfRange`, `Guard.Against.InvalidEmail`). Since these are static methods, traditional mocking frameworks (like Moq for interfaces/classes) are not directly applicable for *replacing* the `Guard` functionality. Instead, our "mocking" or "setup" involves carefully crafting test data (inputs to the application method) to *trigger* specific behaviors within the `Guard` clauses, thereby verifying the application's response to these interactions. The observable outcome is the exception type and message, or the successful completion of the application method.
+*   **Collaborators & Mocking:** In the context of integration tests for a static utility library like `CosmicLexicon.Foundation.GuardClauses`, the "collaborators" are the specific guard clause extension methods (e.g., `Guard.Against.NullOrWhiteSpace`, `Guard.Against.OutOfRange`, `Guard.Against.InvalidEmail`). Since these are static methods, traditional mocking frameworks (like Moq for interfaces/classes) are not directly applicable for *replacing* the `Guard` functionality. Instead, our "mocking" or "setup" involves carefully crafting test data (inputs to the application method) to *trigger* specific behaviors within the `Guard` clauses, thereby verifying the application's response to these interactions. The observable outcome is the exception type and message, or the successful completion of the application method.
 
 ## 4. Recursive Testing Strategy (Regression)
 
@@ -33,7 +33,7 @@ Test suites or subsets will be re-executed based on the following triggers:
 *   **Nightly Builds:** A comprehensive set of integration tests (Daily/Nightly Regression) will run to catch regressions that might have slipped through earlier stages.
 *   **Before Major Releases/Version Bumps:** All integration tests (Full Regression) will be executed as a final quality gate.
 *   **After Dependency Updates:** If any NuGet packages or core .NET framework versions are updated, a Full Regression will be triggered.
-*   **After Significant Code Refactoring in `OpenEchoSystem.GuardClauses`:** Targeted integration tests related to the refactored areas, along with a Smoke Regression, will be run.
+*   **After Significant Code Refactoring in `CosmicLexicon.Foundation.GuardClauses`:** Targeted integration tests related to the refactored areas, along with a Smoke Regression, will be run.
 
 ### 4.2. Test Prioritization and Tagging
 
@@ -58,8 +58,8 @@ Integration tests will be tagged to facilitate selective execution based on regr
 *   **Full Regression (Release Readiness/Major Changes):**
     *   **Trigger:** Pull Request merge, before major releases, significant refactoring, dependency updates.
     *   **Tests Included:** All integration tests.
-    *   **Execution Command (Example):** `dotnet test tests/integration/OpenEchoSystem.GuardClauses.IntegrationTests.csproj` (runs all tests in the project).
-    *   **AI Verifiable Outcome:** Successful execution of all integration tests within the `OpenEchoSystem.GuardClauses.IntegrationTests.csproj` project.
+    *   **Execution Command (Example):** `dotnet test tests/integration/CosmicLexicon.Foundation.GuardClauses.IntegrationTests.csproj` (runs all tests in the project).
+    *   **AI Verifiable Outcome:** Successful execution of all integration tests within the `CosmicLexicon.Foundation.GuardClauses.IntegrationTests.csproj` project.
 
 ## 5. Integration Test Cases
 

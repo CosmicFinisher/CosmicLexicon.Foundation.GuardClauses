@@ -1,4 +1,4 @@
-namespace OpenEchoSystem.GuardClauses
+namespace CosmicLexicon.Foundation.GuardClauses
 {
     /// <summary>
     /// The default, internal implementation of IGuardClause.

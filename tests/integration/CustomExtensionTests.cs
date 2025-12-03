@@ -1,17 +1,20 @@
 using System;
-using OpenEchoSystem.GuardClauses;
+using CosmicLexicon.Foundation.GuardClauses;
 using Xunit;
 
-namespace OpenEchoSystem.GuardClauses.IntegrationTests
+namespace CosmicLexicon.Foundation.GuardClauses.IntegrationTests
 {
     // 1. Define a custom guard clause extension
     public static class CustomGuardExtensions
     {
-        public static void InvalidState(this IGuardClause guardClause, OrderStatus status, string parameterName)
+        extension(IGuardClause guardClause)
         {
-            if (status == OrderStatus.Shipped || status == OrderStatus.Cancelled)
+            public void InvalidState(OrderStatus status, string parameterName)
             {
-                throw new InvalidOperationException($"Order with status '{status}' cannot be modified.");
+                if (status == OrderStatus.Shipped || status == OrderStatus.Cancelled)
+                {
+                    throw new InvalidOperationException($"Order with status '{status}' cannot be modified.");
+                }
             }
         }
     }

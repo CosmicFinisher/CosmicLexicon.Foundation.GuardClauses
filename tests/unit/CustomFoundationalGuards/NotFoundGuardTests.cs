@@ -1,9 +1,9 @@
 using System;
-using OpenEchoSystem.GuardClauses;
-using OpenEchoSystem.GuardClauses.Exceptions;
+using CosmicLexicon.Foundation.GuardClauses;
+using CosmicLexicon.Foundation.GuardClauses.Exceptions;
 using Xunit;
 
-namespace OpenEchoSystem.GuardClauses.UnitTests.CustomFoundationalGuards
+namespace CosmicLexicon.Foundation.GuardClauses.UnitTests.CustomFoundationalGuards
 {
     public class NotFoundGuardTests
     {

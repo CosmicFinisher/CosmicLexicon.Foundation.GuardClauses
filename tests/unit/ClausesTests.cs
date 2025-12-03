@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace OpenEchoSystem.GuardClauses.UnitTests
+namespace CosmicLexicon.Foundation.GuardClauses.UnitTests
 {
     public class ClausesTests
     {

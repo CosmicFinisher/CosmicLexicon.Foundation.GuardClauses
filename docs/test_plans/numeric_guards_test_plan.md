@@ -6,7 +6,7 @@
 ## 1. Introduction
 
 ### 1.1. Document Purpose
-This document provides a detailed test plan for the **Numeric Guard Clauses** feature of the `OpenEchoSystem.GuardClauses` library. It outlines the testing strategy, scope, and specific test cases required to verify the correct implementation and behavior of these guards.
+This document provides a detailed test plan for the **Numeric Guard Clauses** feature of the `CosmicLexicon.Foundation.GuardClauses` library. It outlines the testing strategy, scope, and specific test cases required to verify the correct implementation and behavior of these guards.
 
 ### 1.2. Feature Under Test
 This test plan covers the following numeric guard clauses, which will be implemented as extension methods on the `IGuardClause` interface:

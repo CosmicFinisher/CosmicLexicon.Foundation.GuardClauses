@@ -35,7 +35,7 @@ jobs:
       with:
         dotnet-version: '9.0.x'
     - name: Run Performance Tests
-      run: dotnet run --project tests/performance/OpenEchoSystem.GuardClauses.PerformanceTests.csproj --configuration Release
+      run: dotnet run --project tests/performance/CosmicLexicon.Foundation.GuardClauses.PerformanceTests.csproj --configuration Release
 
   docs-and-package:
     runs-on: ubuntu-latest
@@ -51,6 +51,6 @@ jobs:
     - name: Build Documentation
       run: docfx docs/docfx.json
     - name: Pack NuGet package
-      run: dotnet pack src/OpenEchoSystem.GuardClauses.csproj -c Release -o ./nuget_packages --no-build
+      run: dotnet pack src/CosmicLexicon.Foundation.GuardClauses.csproj -c Release -o ./nuget_packages --no-build
     - name: Publish NuGet package
       run: dotnet nuget push ./nuget_packages/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json

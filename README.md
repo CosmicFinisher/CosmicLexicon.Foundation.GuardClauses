@@ -1,7 +1,7 @@
 
-# OpenEchoSystem.GuardClauses: A Modern .NET Guard Clause Library
+# CosmicLexicon.Foundation.GuardClauses: A Modern .NET Guard Clause Library
 
-OpenEchoSystem.GuardClauses is a lightweight, performant, and extensible .NET library designed to make your code more robust and readable by simplifying argument validation. It leverages modern C# features like `[CallerArgumentExpression]` to provide "syntax sugar" that makes guard clauses clean and intuitive.
+CosmicLexicon.Foundation.GuardClauses is a lightweight, performant, and extensible .NET library designed to make your code more robust and readable by simplifying argument validation. It leverages modern C# features like `[CallerArgumentExpression]` to provide "syntax sugar" that makes guard clauses clean and intuitive.
 
 # Getting Started
 
@@ -11,13 +11,13 @@ OpenEchoSystem.GuardClauses is a lightweight, performant, and extensible .NET li
 You can install the package via the NuGet Package Manager console:
 
 ```powershell
-Install-Package OpenEchoSystem.GuardClauses
+Install-Package CosmicLexicon.Foundation.GuardClauses
 ```
 
 Or via the .NET CLI:
 
 ```bash
-dotnet add package OpenEchoSystem.GuardClauses
+dotnet add package CosmicLexicon.Foundation.GuardClauses
 ```
 
 ## Usage Examples

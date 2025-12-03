@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using OpenEchoSystem.GuardClauses;
+using CosmicLexicon.Foundation.GuardClauses;
 using Xunit;
 
-namespace OpenEchoSystem.GuardClauses.UnitTests.ObjectGuards
+namespace CosmicLexicon.Foundation.GuardClauses.UnitTests.ObjectGuards
 {
     public class ObjectGuardClauseTests
     {

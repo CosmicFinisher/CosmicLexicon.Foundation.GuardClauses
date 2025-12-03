@@ -1,4 +1,4 @@
-namespace OpenEchoSystem.GuardClauses
+namespace CosmicLexicon.Foundation.GuardClauses
 {
     using System;
 
@@ -7,18 +7,21 @@ namespace OpenEchoSystem.GuardClauses
     /// </summary>
     public static class GuardClauseGuidExtensions
     {
-        /// <summary>
-        /// Throws an <see cref="ArgumentException"/> if the provided <see cref="Guid"/> <paramref name="value"/> is empty.
-        /// </summary>
-        /// <param name="guard">The <see cref="IGuardClause"/> instance.</param>
-        /// <param name="value">The <see cref="Guid"/> value to be validated.</param>
-        /// <param name="parameterName">The name of the parameter being validated.</param>
-        /// <exception cref="ArgumentException">Thrown if <paramref name="value"/> is an empty <see cref="Guid"/>.</exception>
-        public static void Empty(this IGuardClause guard, Guid value, string parameterName)
+        extension(IGuardClause guard)
         {
-            if (value == Guid.Empty)
+            /// <summary>
+            /// Throws an <see cref="ArgumentException"/> if the provided <see cref="Guid"/> <paramref name="value"/> is empty.
+            /// </summary>
+            /// <param name="guard">The <see cref="IGuardClause"/> instance.</param>
+            /// <param name="value">The <see cref="Guid"/> value to be validated.</param>
+            /// <param name="parameterName">The name of the parameter being validated.</param>
+            /// <exception cref="ArgumentException">Thrown if <paramref name="value"/> is an empty <see cref="Guid"/>.</exception>
+            public void Empty(Guid value, string parameterName)
             {
-                throw new ArgumentException($"'{parameterName}' cannot be an empty GUID.", parameterName);
+                if (value == Guid.Empty)
+                {
+                    throw new ArgumentException($"'{parameterName}' cannot be an empty GUID.", parameterName);
+                }
             }
         }
     }

@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-This document outlines the granular test plan for the **Null Guard Clauses** feature of the OpenEchoSystem.GuardClauses library. The feature includes three specific guard clauses: `Null<T>`, `NullOrEmpty`, and `NullOrWhiteSpace`.
+This document outlines the granular test plan for the **Null Guard Clauses** feature of the CosmicLexicon.Foundation.GuardClauses library. The feature includes three specific guard clauses: `Null<T>`, `NullOrEmpty`, and `NullOrWhiteSpace`.
 
 This plan is derived from the feature specification outlined in [`docs/PRDMasterPlan.v2.md`](docs/PRDMasterPlan.v2.md:48) (Phase 3, Task 1) and the system design detailed in [`docs/architecture/high_level_architecture.v2.md`](docs/architecture/high_level_architecture.v2.md:0).
 
@@ -85,4 +85,4 @@ This guard protects against null, empty, or whitespace-only strings.
 *   **Runner:** .NET Test SDK
 *   **Assertions:** xUnit's assertion library (e.g., `Assert.Throws<T>`).
 
-**AI Verifiable Criterion:** The test project `tests/unit/OpenEchoSystem.GuardClauses.UnitTest.csproj` must reference the xUnit and .NET Test SDK packages.
+**AI Verifiable Criterion:** The test project `tests/unit/CosmicLexicon.Foundation.GuardClauses.UnitTest.csproj` must reference the xUnit and .NET Test SDK packages.

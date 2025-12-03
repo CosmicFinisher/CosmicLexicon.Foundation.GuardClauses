@@ -1,15 +1,18 @@
 using System;
-using OpenEchoSystem.GuardClauses.Exceptions;
+using CosmicLexicon.Foundation.GuardClauses.Exceptions;
 
-namespace OpenEchoSystem.GuardClauses
+namespace CosmicLexicon.Foundation.GuardClauses
 {
     public static class NotFoundGuardExtensions
     {
-        public static void NotFound<TKey, TValue>(this IGuardClause guardClause, TKey key, Func<TKey, TValue?> lookup) where TValue : class
+        extension(IGuardClause guardClause)
         {
-            if (lookup(key) is null)
+            public void NotFound<TKey, TValue>(TKey key, Func<TKey, TValue?> lookup) where TValue : class
             {
-                throw new NotFoundException($"Resource with key '{key}' was not found.");
+                if (lookup(key) is null)
+                {
+                    throw new NotFoundException($"Resource with key '{key}' was not found.");
+                }
             }
         }
     }

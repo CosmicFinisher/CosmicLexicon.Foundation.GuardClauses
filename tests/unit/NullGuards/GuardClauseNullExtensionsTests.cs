@@ -1,8 +1,8 @@
 using System;
-using OpenEchoSystem.GuardClauses;
+using CosmicLexicon.Foundation.GuardClauses;
 using Xunit;
 
-namespace OpenEchoSystem.GuardClauses.UnitTests.NullGuards
+namespace CosmicLexicon.Foundation.GuardClauses.UnitTests.NullGuards
 {
     public class GuardClauseNullExtensionsTests
     {

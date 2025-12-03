@@ -1,6 +1,6 @@
 using BenchmarkDotNet.Running;
 
-namespace OpenEchoSystem.GuardClauses.PerformanceTests;
+namespace CosmicLexicon.Foundation.GuardClauses.PerformanceTests;
 
 public class Program
 {

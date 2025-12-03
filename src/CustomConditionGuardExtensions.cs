@@ -1,14 +1,17 @@
 using System;
 
-namespace OpenEchoSystem.GuardClauses
+namespace CosmicLexicon.Foundation.GuardClauses
 {
     public static class CustomConditionGuardExtensions
     {
-        public static void CustomCondition(this IGuardClause guardClause, bool condition, string parameterName)
+        extension(IGuardClause guardClause)
         {
-            if (condition)
+            public void CustomCondition(bool condition, string parameterName)
             {
-                throw new ArgumentException("The specified condition was met, indicating an invalid state.", parameterName);
+                if (condition)
+                {
+                    throw new ArgumentException("The specified condition was met, indicating an invalid state.", parameterName);
+                }
             }
         }
     }

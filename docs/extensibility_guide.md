@@ -1,6 +1,6 @@
-# Extensibility Guide for OpenEchoSystem.GuardClauses
+# Extensibility Guide for CosmicLexicon.Foundation.GuardClauses
 
-One of the core design principles of the `OpenEchoSystem.GuardClauses` library is extensibility. You can easily create your own custom guard clauses to enforce project-specific validation rules while maintaining a consistent, fluent syntax.
+One of the core design principles of the `CosmicLexicon.Foundation.GuardClauses` library is extensibility. You can easily create your own custom guard clauses to enforce project-specific validation rules while maintaining a consistent, fluent syntax.
 
 ## Creating a Custom Guard Clause
 
@@ -34,7 +34,7 @@ Inside your static class, create a public static method that extends `IGuardClau
 Let's create a custom guard clause that ensures an integer value is odd.
 
 ```csharp
-using OpenEchoSystem.GuardClauses;
+using CosmicLexicon.Foundation.GuardClauses;
 using System;
 using System.Runtime.CompilerServices;
 

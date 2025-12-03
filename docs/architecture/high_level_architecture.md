@@ -1,8 +1,8 @@
-# High-Level Architecture: OpenEchoSystem.GuardClauses Library
+# High-Level Architecture: CosmicLexicon.Foundation.GuardClauses Library
 
 ## 1. Introduction
 
-This document outlines the high-level architecture for the `OpenEchoSystem.GuardClauses` library, a modern C# guard clause implementation. The design focuses on providing a performant, extensible, and developer-friendly API for common input validations, adhering to modern .NET best practices. This architecture directly supports the AI-verifiable tasks detailed in [`docs/PRDMasterPlan.md`](docs/PRDMasterPlan.md) and aims to facilitate the successful execution of the high-level acceptance tests defined in [`docs/master_acceptance_test_plan.md`](docs/master_acceptance_test_plan.md).
+This document outlines the high-level architecture for the `CosmicLexicon.Foundation.GuardClauses` library, a modern C# guard clause implementation. The design focuses on providing a performant, extensible, and developer-friendly API for common input validations, adhering to modern .NET best practices. This architecture directly supports the AI-verifiable tasks detailed in [`docs/PRDMasterPlan.md`](docs/PRDMasterPlan.md) and aims to facilitate the successful execution of the high-level acceptance tests defined in [`docs/master_acceptance_test_plan.md`](docs/master_acceptance_test_plan.md).
 
 ## 2. Project Goals & Constraints
 
@@ -70,7 +70,7 @@ graph TD
     E -- "Valid Input" --> F[Continues Execution];
     E -- "Invalid Input" --> G[Throws ArgumentException/ArgumentOutOfRangeException];
 
-    subgraph OpenEchoSystem.GuardClauses Library
+    subgraph CosmicLexicon.Foundation.GuardClauses Library
         C
         D
         E
@@ -115,6 +115,6 @@ Based on this architecture, the following files and their initial structures wil
 *   `src/NumericGuard.cs`: Initial file for `Guard.Against.OutOfRange()`, `Guard.Against.Zero()`, `Guard.Against.Negative()` numeric-related guard extension methods.
 *   `src/EnumGuard.cs`: Initial file for `Guard.Against.OutOfRange()` enum-related guard extension methods.
 *   `src/GuidGuard.cs`: Initial file for `Guard.Against.Empty()` GUID-related guard extension methods.
-*   `OpenEchoSystem.GuardClauses.csproj`: The project file for the library, configured for .NET Standard 2.0.
+*   `CosmicLexicon.Foundation.GuardClauses.csproj`: The project file for the library, configured for .NET Standard 2.0.
 
 This architecture directly supports all identified features by providing a structured and extensible framework for implementing each specific guard clause. The modular nature of extension methods allows for adding new validation types without impacting existing functionality.

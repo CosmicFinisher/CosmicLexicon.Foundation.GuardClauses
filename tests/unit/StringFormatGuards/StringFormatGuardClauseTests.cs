@@ -1,8 +1,8 @@
 using System;
 using Xunit;
-using OpenEchoSystem.GuardClauses;
+using CosmicLexicon.Foundation.GuardClauses;
 
-namespace OpenEchoSystem.GuardClauses.UnitTests.StringFormatGuards
+namespace CosmicLexicon.Foundation.GuardClauses.UnitTests.StringFormatGuards
 {
     public class StringFormatGuardClauseTests
     {

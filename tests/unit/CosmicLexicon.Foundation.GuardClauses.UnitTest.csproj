@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <RootNamespace>OpenEchoSystem.GuardClauses.UnitTests</RootNamespace>
+     <TargetFramework>$(NetPrimaryTargetFramework)</TargetFramework>
+    <RootNamespace>CosmicLexicon.Foundation.GuardClauses.UnitTests</RootNamespace>
     <EnableSharedKernelDependencies>true</EnableSharedKernelDependencies>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\OpenEchoSystem.GuardClauses.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\CosmicLexicon.Foundation.GuardClauses.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,4 +1,4 @@
-namespace OpenEchoSystem.GuardClauses
+namespace CosmicLexicon.Foundation.GuardClauses
 {
     /// <summary>
     /// The primary entry point for all guard clauses.

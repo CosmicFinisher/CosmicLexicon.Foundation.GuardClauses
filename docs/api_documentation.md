@@ -1,8 +1,8 @@
-# API Documentation for OpenEchoSystem.GuardClauses
+# API Documentation for CosmicLexicon.Foundation.GuardClauses
 
-This document provides a comprehensive overview of the public API for the `OpenEchoSystem.GuardClauses` library. It is generated from the DocFX .yml files.
+This document provides a comprehensive overview of the public API for the `CosmicLexicon.Foundation.GuardClauses` library. It is generated from the DocFX .yml files.
 
-## Namespace: OpenEchoSystem.GuardClauses
+## Namespace: CosmicLexicon.Foundation.GuardClauses
 
 ### `EnumGuardExtensions` Class
 
@@ -92,7 +92,7 @@ This document provides a comprehensive overview of the public API for the `OpenE
 
 **Syntax:** `public interface IGuardClause`
 
-## Namespace: OpenEchoSystem.ValueGuards.Core
+## Namespace: CosmicLexicon.Foundation.ValueGuards.Core
 
 ### `GuidGuard` Class
 

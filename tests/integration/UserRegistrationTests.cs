@@ -1,8 +1,8 @@
 using System;
-using OpenEchoSystem.GuardClauses;
+using CosmicLexicon.Foundation.GuardClauses;
 using Xunit;
 
-namespace OpenEchoSystem.GuardClauses.IntegrationTests
+namespace CosmicLexicon.Foundation.GuardClauses.IntegrationTests
 {
     // Mock User class for testing purposes
     public class User

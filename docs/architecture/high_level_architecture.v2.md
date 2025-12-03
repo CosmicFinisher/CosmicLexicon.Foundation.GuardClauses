@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-This document outlines the high-level architecture for the modernized `OpenEchoSystem.GuardClauses` C# library. The design is guided by the principles of **extensibility, performance, readability, and testability**, as defined in `docs/PRDMasterPlan.v2.md`. The architecture directly supports the AI-verifiable tasks in the master plan and is designed to pass all high-level acceptance tests outlined in `docs/master_acceptance_test_plan.v2.md`.
+This document outlines the high-level architecture for the modernized `CosmicLexicon.Foundation.GuardClauses` C# library. The design is guided by the principles of **extensibility, performance, readability, and testability**, as defined in `docs/PRDMasterPlan.v2.md`. The architecture directly supports the AI-verifiable tasks in the master plan and is designed to pass all high-level acceptance tests outlined in `docs/master_acceptance_test_plan.v2.md`.
 
 The core architectural pattern is a **fluent interface** accessed via a static entry point, with guard clause logic implemented as **extension methods** on a central interface. This approach promotes clean, readable code and makes the library highly extensible.
 
@@ -14,7 +14,7 @@ The architecture is composed of a few key components that work together to provi
 
 This is the primary entry point for developers using the library.
 
--   **Namespace:** `OpenEchoSystem.GuardClauses`
+-   **Namespace:** `CosmicLexicon.Foundation.GuardClauses`
 -   **Definition:** `public static class Guard`
 -   **Purpose:** Provides a single, static access point to the guard clause functionality.
 -   **Key Member:**
@@ -25,7 +25,7 @@ This is the primary entry point for developers using the library.
 
 This interface is the anchor for all guard clause extension methods.
 
--   **Namespace:** `OpenEchoSystem.GuardClauses`
+-   **Namespace:** `CosmicLexicon.Foundation.GuardClauses`
 -   **Definition:** `public interface IGuardClause`
 -   **Purpose:** Acts as a marker interface. Its sole purpose is to be the target for extension methods. This decouples the guard clause logic from the entry point and allows for easy extension. It has no members.
 
@@ -33,7 +33,7 @@ This interface is the anchor for all guard clause extension methods.
 
 This is the concrete implementation of the `IGuardClause` interface.
 
--   **Namespace:** `OpenEchoSystem.GuardClauses`
+-   **Namespace:** `CosmicLexicon.Foundation.GuardClauses`
 -   **Definition:** `internal class GuardClause : IGuardClause`
 -   **Purpose:** A lightweight, internal, and sealed class that provides the singleton instance for the `Guard.Against` property. Keeping it internal prevents external instantiation or inheritance, enforcing the intended usage pattern.
 
