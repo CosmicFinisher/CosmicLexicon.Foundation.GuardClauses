@@ -1,8 +1,8 @@
 using System;
-using OpenEchoSystem.GuardClauses.Exceptions;
+using CosmicLexicon.Foundation.GuardClauses.Exceptions;
 using Xunit;
 
-namespace OpenEchoSystem.GuardClauses.UnitTests.Exceptions
+namespace CosmicLexicon.Foundation.GuardClauses.UnitTests.Exceptions
 {
     public class ExceptionTests
     {

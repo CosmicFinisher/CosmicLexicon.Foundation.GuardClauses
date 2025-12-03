@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace OpenEchoSystem.GuardClauses.UnitTest.NullGuards
+namespace CosmicLexicon.Foundation.GuardClauses.UnitTest.NullGuards
 {
     public class NullGuardClauseTests
     {

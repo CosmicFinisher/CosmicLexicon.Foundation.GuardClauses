@@ -1,6 +1,6 @@
 using System;
 
-namespace OpenEchoSystem.GuardClauses.Exceptions;
+namespace CosmicLexicon.Foundation.GuardClauses.Exceptions;
 
 /// <summary>
 /// Represents an exception that is thrown when a requested resource is not found.

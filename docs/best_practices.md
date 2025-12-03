@@ -1,6 +1,6 @@
-# Best Practices for Using OpenEchoSystem.GuardClauses
+# Best Practices for Using CosmicLexicon.Foundation.GuardClauses
 
-The `OpenEchoSystem.GuardClauses` library is a powerful tool for making your code more robust and readable. To get the most out of it, follow these best practices.
+The `CosmicLexicon.Foundation.GuardClauses` library is a powerful tool for making your code more robust and readable. To get the most out of it, follow these best practices.
 
 ## 1. Fail Fast and Early
 
@@ -92,7 +92,7 @@ public class RegistrationService
 
 ## 4. Performance Considerations
 
-The `OpenEchoSystem.GuardClauses` library is designed to be lightweight. However, be mindful of the performance implications of your validation logic, especially in performance-critical code.
+The `CosmicLexicon.Foundation.GuardClauses` library is designed to be lightweight. However, be mindful of the performance implications of your validation logic, especially in performance-critical code.
 
 *   The built-in guards for `InvalidEmail` and `InvalidUrl` use pre-compiled regular expressions for optimal performance.
 *   When creating custom guards, avoid long-running or complex operations. If a validation requires a database lookup or a web service call, it is likely business logic, not a precondition, and should not be in a guard clause.

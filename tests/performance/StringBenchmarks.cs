@@ -1,9 +1,9 @@
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Configs;
-using OpenEchoSystem.GuardClauses;
+using CosmicLexicon.Foundation.GuardClauses;
 using System.Text.RegularExpressions;
 
-namespace OpenEchoSystem.GuardClauses.PerformanceTests;
+namespace CosmicLexicon.Foundation.GuardClauses.PerformanceTests;
 
 [MemoryDiagnoser]
 [GroupBenchmarksBy(BenchmarkLogicalGroupRule.ByCategory)]

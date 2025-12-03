@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OpenEchoSystem.GuardClauses.IntegrationTests
+namespace CosmicLexicon.Foundation.GuardClauses.IntegrationTests
 {
     public class Order
     {

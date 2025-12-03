@@ -1,9 +1,9 @@
 using System;
 using FluentAssertions;
-using OpenEchoSystem.GuardClauses;
+using CosmicLexicon.Foundation.GuardClauses;
 using Xunit;
 
-namespace OpenEchoSystem.GuardClauses.UnitTests.NumericGuards
+namespace CosmicLexicon.Foundation.GuardClauses.UnitTests.NumericGuards
 {
     public class NumericGuardClauseTests
     {

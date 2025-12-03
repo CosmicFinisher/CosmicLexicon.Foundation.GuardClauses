@@ -2,7 +2,7 @@
 
 ## 1. Introduction and Scope
 
-This document outlines the granular test plan for the 'String Format Guard Clauses' feature of the OpenEchoSystem.GuardClauses library. This feature is a core component of the library's validation capabilities as defined in [`docs/PRDMasterPlan.v2.md`](docs/PRDMasterPlan.v2.md) under **Phase 3, Micro Task 3**.
+This document outlines the granular test plan for the 'String Format Guard Clauses' feature of the CosmicLexicon.Foundation.GuardClauses library. This feature is a core component of the library's validation capabilities as defined in [`docs/PRDMasterPlan.v2.md`](docs/PRDMasterPlan.v2.md) under **Phase 3, Micro Task 3**.
 
 The scope of this test plan covers the following extension methods on `IGuardClause`:
 *   `InvalidFormat`

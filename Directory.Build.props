@@ -1,8 +1,48 @@
 <Project>
+
 	<PropertyGroup>
-		<EnableExternalProjectPath>false</EnableExternalProjectPath>
-		<NoWarn>$(NoWarn);NU1506;CS1591</NoWarn>
+		<ProductName>CosmicLexicon.Foundation.GuardClauses</ProductName>
+		<ProjectTitle>GuardClauses Framework Foundation Library</ProjectTitle>
 	</PropertyGroup>
-	<Import Condition="'$(EnableExternalProjectPath)' == 'true'" Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\.net\Framework.Build.props" />
+	<PropertyGroup Label="NugetPackagingSettings">
+		<!--<PackageId>CosmicLexicon.Foundation</PackageId>-->
+		<Authors>COSMIC FINISHER ALPHA</Authors>
+		<Company>Cosmic Finisher</Company>
+		<Description>A guard-clauses framework library for Cosmic Containment projects.</Description>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/CosmicFinisher/CosmicLexicon.Foundation.GuardClauses.git</RepositoryUrl>
+		<PackageProjectUrl>$(RepositoryUrl)</PackageProjectUrl>
+		<PackageIcon>icon.png</PackageIcon>
+		<RepositoryType>git</RepositoryType>
+
+	</PropertyGroup>
+
+
+
+	<Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\.net\Framework.Build.props" />
+	<PropertyGroup Label="SharedDependencyControl">
+		<!-- Enable packaging and repository integration for framework projects by default. -->
+		<EnableRepository>true</EnableRepository>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<RepositoryRootPath>$(MSBuildThisFileDirectory)..\</RepositoryRootPath>
+	</PropertyGroup>
+
+	<ItemGroup Label="LicenseFilePackaging" Condition=" '$(EnablePackaging)' == 'true'">
+		<None Include="$(RepositoryRootPath)licenses\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="$(RepositoryRootPath)icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="$(RepositoryRootPath)licenses\NOTICE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+
+	</ItemGroup>
 
 </Project>

@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using OpenEchoSystem.GuardClauses;
-using OpenEchoSystem.GuardClauses.Exceptions;
+using CosmicLexicon.Foundation.GuardClauses;
+using CosmicLexicon.Foundation.GuardClauses.Exceptions;
 using Xunit;
 
-namespace OpenEchoSystem.GuardClauses.IntegrationTests
+namespace CosmicLexicon.Foundation.GuardClauses.IntegrationTests
 {
     public class OrderProcessingTests
     {

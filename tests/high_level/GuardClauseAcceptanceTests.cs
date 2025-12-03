@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using FluentAssertions;
 using Xunit;
 using Xunit.Abstractions;
-using OpenEchoSystem.GuardClauses; // Assuming the Guard class is in this namespace
+using CosmicLexicon.Foundation.GuardClauses; // Assuming the Guard class is in this namespace
 
 // Define a custom exception for demonstration of custom guards
 public class NotFoundException : ArgumentException
@@ -31,7 +31,7 @@ public static class CustomGuardExtensions
     }
 }
 
-namespace OpenEchoSystem.GuardClauses.AcceptanceTests
+namespace CosmicLexicon.Foundation.GuardClauses.AcceptanceTests
 {
     public class GuardClauseAcceptanceTests
     {

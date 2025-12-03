@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace OpenEchoSystem.GuardClauses.IntegrationTests
+namespace CosmicLexicon.Foundation.GuardClauses.IntegrationTests
 {
     // This class simulates a piece of application logic that uses the Guard Clause library.
     // It serves as the "Unit Under Test" for the integration tests.

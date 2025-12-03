@@ -1,8 +1,8 @@
 using System;
-using OpenEchoSystem.GuardClauses;
+using CosmicLexicon.Foundation.GuardClauses;
 using Xunit;
 
-namespace OpenEchoSystem.GuardClauses.UnitTests.CustomFoundationalGuards
+namespace CosmicLexicon.Foundation.GuardClauses.UnitTests.CustomFoundationalGuards
 {
     public class GuidGuardTests
     {
