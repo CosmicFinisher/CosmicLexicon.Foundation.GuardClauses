@@ -14,7 +14,7 @@
 		<PackageProjectUrl>$(RepositoryUrl)</PackageProjectUrl>
 		<PackageIcon>icon.png</PackageIcon>
 		<RepositoryType>git</RepositoryType>
-
+		<NetPrimaryTargetFramework>net1.0</NetPrimaryTargetFramework>
 	</PropertyGroup>
 
 
