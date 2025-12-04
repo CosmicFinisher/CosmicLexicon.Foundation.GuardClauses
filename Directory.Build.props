@@ -2,19 +2,22 @@
 
 	<PropertyGroup>
 		<ProductName>CosmicLexicon.Foundation.GuardClauses</ProductName>
-		<ProjectTitle>GuardClauses Framework Foundation Library</ProjectTitle>
+		<ProjectTitle>Cosmic_Lexicon Framework Foundation Guard Clauses Library</ProjectTitle>
 	</PropertyGroup>
 	<PropertyGroup Label="NugetPackagingSettings">
 		<!--<PackageId>CosmicLexicon.Foundation</PackageId>-->
-		<Authors>COSMIC FINISHER ALPHA</Authors>
-		<Company>Cosmic Finisher</Company>
-		<Description>A guard-clauses framework library for Cosmic Containment projects.</Description>
+		<!--<Authors>COSMIC FINISHER ALPHA</Authors>-->
+		<!--<Company>Cosmic Finisher</Company>-->
+		<Description>A foundation guard-clauses framework core library for Cosmic Containment projects.</Description>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 		<RepositoryUrl>https://github.com/CosmicFinisher/CosmicLexicon.Foundation.GuardClauses.git</RepositoryUrl>
 		<PackageProjectUrl>$(RepositoryUrl)</PackageProjectUrl>
+		<ProductName>Cosmic Lexicon Foundation Guard Clauses</ProductName>
+		<ProjectTitle>Cosmic Lexicon Framework Foundation Guard Clauses</ProjectTitle>
 		<PackageIcon>icon.png</PackageIcon>
 		<RepositoryType>git</RepositoryType>
-		<NetPrimaryTargetFramework>net10.0</NetPrimaryTargetFramework>
+		<PackageVersion>1.0.0-alpha.1</PackageVersion>
+		<AssemblyFileVersion>1.0.0-alpha.1</AssemblyFileVersion>
 	</PropertyGroup>
 
 
@@ -26,7 +29,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<RepositoryRootPath>$(MSBuildThisFileDirectory)..\</RepositoryRootPath>
+		<RepositoryRootPath>$(MSBuildThisFileDirectory)</RepositoryRootPath>
 	</PropertyGroup>
 
 	<ItemGroup Label="LicenseFilePackaging" Condition=" '$(EnablePackaging)' == 'true'">

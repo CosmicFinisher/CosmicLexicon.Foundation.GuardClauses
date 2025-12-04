@@ -1,9 +1,9 @@
 <Project>
-	<PropertyGroup>
+	<!--<PropertyGroup>
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 	</PropertyGroup>
 	<ItemGroup>
-		<!-- Microsoft Packages -->
+		--><!-- Microsoft Packages --><!--
 		<PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
 		<PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="9.0.4" />
 		<PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.4" />
@@ -23,7 +23,7 @@
 		<PackageVersion Include="Polly" Version="8.2.0" />
 		<PackageVersion Include="System.Reactive.Linq" Version="6.0.0" />
 
-		<!-- gRPC and API Related -->
+		--><!-- gRPC and API Related --><!--
 		<PackageVersion Include="Google.Protobuf" Version="3.25.3" />
 		<PackageVersion Include="Google.Protobuf.Tools" Version="3.25.3" />
 		<PackageVersion Include="Grpc.AspNetCore" Version="2.61.0" />
@@ -32,13 +32,13 @@
 		<PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
 		<PackageVersion Include="Swashbuckle.AspNetCore" Version="8.1.1" />
 
-		<!-- Entity Framework Core -->
+		--><!-- Entity Framework Core --><!--
 		<PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
 		<PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.4" />
 		<PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
 		<PackageVersion Include="MongoDB.EntityFrameworkCore" Version="9.0.0-preview.1" />
 
-		<!-- Build & Code Analysis -->
+		--><!-- Build & Code Analysis --><!--
 		<PackageVersion Include="Microsoft.Build" Version="17.11.4" />
 		<PackageVersion Include="Microsoft.Build.Locator" Version="1.7.8" />
 		<PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0" />
@@ -46,41 +46,41 @@
 		<PackageVersion Include="Microsoft.CodeAnalysis.VisualBasic.Workspaces" Version="4.12.0" />
 		<PackageVersion Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="4.12.0" />
 
-		<!-- MediatR -->
+		--><!-- MediatR --><!--
 		<PackageVersion Include="MediatR" Version="12.5.0" />
 
-		<!-- AutoMapper -->
+		--><!-- AutoMapper --><!--
 		<PackageVersion Include="AutoMapper" Version="14.0.0" />
 
-		<!-- Newtonsoft.Json -->
+		--><!-- Newtonsoft.Json --><!--
 		<PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageVersion Include="JsonNet.ContractResolvers" Version="2.0.0" />
 
-		<!-- MongoDB -->
+		--><!-- MongoDB --><!--
 		<PackageVersion Include="MongoDB.Driver.Core" Version="8.2.0" />
 		<PackageVersion Include="MongoDB.Bson" Version="8.2.0" />
 		<PackageVersion Include="MongoDB.Driver" Version="8.2.0" />
 
-		<!-- FluentValidation -->
+		--><!-- FluentValidation --><!--
 		<PackageVersion Include="FluentValidation" Version="11.11.0" />
 		<PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
 
-		<!-- Ardalis Packages -->
+		--><!-- Ardalis Packages --><!--
 		<PackageVersion Include="Ardalis.Result" Version="10.1.0" />
 		<PackageVersion Include="Ardalis.Specification" Version="9.1.0" />
 		<PackageVersion Include="Ardalis.Specification.EntityFrameworkCore" Version="9.1.0" />
 
-		<!-- API Versioning -->
+		--><!-- API Versioning --><!--
 		<PackageVersion Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
 		<PackageVersion Include="Asp.Versioning.Http" Version="8.1.0" />
 
-		<!-- Swashbuckle (Swagger) -->
+		--><!-- Swashbuckle (Swagger) --><!--
 		<PackageVersion Include="Swashbuckle.AspNetCore" Version="8.1.1" />
 		<PackageVersion Include="Swashbuckle.AspNetCore.Annotations" Version="8.1.1" />
 		<PackageVersion Include="Swashbuckle.AspNetCore.SwaggerGen" Version="8.1.1" />
 		<PackageVersion Include="Swashbuckle.AspNetCore.Newtonsoft" Version="8.1.1" />
 
-		<!-- Testing Packages -->
+		--><!-- Testing Packages --><!--
 		<PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
 		<PackageVersion Include="xunit" Version="2.9.3" />
 		<PackageVersion Include="xunit.runner.visualstudio" Version="3.1.1" />
@@ -100,5 +100,11 @@
 		<PackageVersion Include="BenchmarkDotNet" Version="0.15.2" />
 
 		
-	</ItemGroup>
+	</ItemGroup>-->
+	<PropertyGroup>
+		<EnableExternalProjectPath>true</EnableExternalProjectPath>
+	</PropertyGroup>
+	<Import Condition="'$(EnableExternalProjectPath)' == 'true'" Project="$(MSBuildThisFileDirectory)..\..\..\..\..\.net\Framework.Packages.props" />
 </Project>
+
+
