@@ -2,22 +2,10 @@
 
   <PropertyGroup>
      <TargetFramework>$(NetPrimaryTargetFramework)</TargetFramework>
-    <Nullable>enable</Nullable>
-    <LangVersion>latest</LangVersion>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <IsPackable>true</IsPackable>
-    <PackageId>CosmicLexicon.Foundation.GuardClauses</PackageId>
-    <Version>1.0.0</Version>
-    <Authors>CosmicLexicon.Foundation</Authors>
-    <Company>CosmicLexicon.Foundation</Company>
-    <PackageDescription>A modern, lightweight, and extensible guard clause library for .NET.</PackageDescription>
-    <RepositoryUrl>https://github.com/CosmicFinisher/CosmicLexicon.Foundation.GuardClauses</RepositoryUrl>
-    <PackageTags>guard, clauses, validation, argument, fluent, cosmicLexicon, foundation</PackageTags>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/CosmicFinisher/CosmicLexicon.Foundation.GuardClauses</PackageProjectUrl>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	  <TargetFramework>$(NetPrimaryTargetFramework)</TargetFramework>
+	  <EnableSharedKernelDependencies>true</EnableSharedKernelDependencies>
+	  <IsPackable>true</IsPackable>
+	  <EnablePackaging>true</EnablePackaging>
   </PropertyGroup>
 
   <ItemGroup>
